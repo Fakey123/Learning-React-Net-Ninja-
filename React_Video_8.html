@@ -14,6 +14,9 @@
     <div id="content">
         
     </div>
+    <div id="footer">
+        
+    </div>
 </body>
 <script type="text/babel">
     const Head = () => {
@@ -33,5 +36,14 @@
         )
     }
     ReactDOM.render(<Content/>, document.getElementById('content'));
+    const Footer = () =>{
+        return (
+            <div>
+                <h2>Footer</h2>
+                <p>This is a Footer.</p>    
+            </div>
+        )
+    }
+    ReactDOM.render(<Footer/>, document.getElementById('footer'));
 </script>
 </html>
