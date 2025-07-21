@@ -22,25 +22,37 @@
     const Head = () => {
         return(
             <div> 
-                <h1>React App</h1> 
+                <h1 className = 'title'>React App</h1> 
             </div>
         )
     }
-    ReactDOM.render(<Head />, document.getElementById('header'));
+    ReactDOM.render(<Head/>, document.getElementById('header'));
     const Content = () =>{
+        const handleClick = (e) => {
+            console.log("User clicked the button");
+            console.log("The title of this project is ", document.getElementsByClassName('title')[0].innerText);
+            console.log(e);
+            
+        }
         return (
             <div>
-                <h2>Content</h2>
-                <p>This is a simple React application.</p>    
+                <h2 className = 'contentClass'>Content</h2>
+                <p>This is a simple React application.</p>
+                <button onClick = {handleClick}>Know me</button>   
+                <button onClick = {() => {
+                    alert("Hello, this is a simple alert!");
+                }}>Click to Alert</button> 
             </div>
         )
     }
     ReactDOM.render(<Content/>, document.getElementById('content'));
     const Footer = () =>{
+        const currentYear = new Date().getFullYear();
         return (
             <div>
                 <h2>Footer</h2>
-                <p>This is a Footer.</p>    
+                <p>This is a Footer.</p>
+                <h2>Copyright @ {currentYear}</h2>    
             </div>
         )
     }
