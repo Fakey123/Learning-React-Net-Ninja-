@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import NewComponent from './Components/NewComponent';
 import StateComponent from './Components/StateComponent';
+import OutputtingLists from './Components/OutputtingLists';
+import ReactVid21 from './Components/ReactVid21';
 
 function App() {
   return (
@@ -11,6 +13,12 @@ function App() {
       </div>
       <div>
         <StateComponent/>
+      </div>
+      <div>
+        <OutputtingLists/>
+      </div>
+      <div>
+        <ReactVid21/>
       </div>
     </div>
   );

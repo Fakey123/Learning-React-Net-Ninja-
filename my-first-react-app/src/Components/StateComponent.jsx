@@ -10,7 +10,7 @@ function StateComponent() {
     }
 
     return(
-        <div className="changeName">
+        <div>
             <h1>Hello I'm, {name}</h1>
             <button onClick={handleChangeName}>Change Name</button>
         </div>
