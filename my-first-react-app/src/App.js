@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import NewComponent from './Components/NewComponent';
 import StateComponent from './Components/StateComponent';

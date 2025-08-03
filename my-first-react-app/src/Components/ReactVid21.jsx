@@ -10,9 +10,11 @@ function ReactVid21() {
     ]);
 
     function handleDelete(id) {
-        setTodo(todo.filter((todoValues) => {
-            return id !== todoValues.id;
-        }))
+        setTodo((prevTodo) => {
+            return prevTodo.filter((todoValues) => {
+                return id !== todoValues.id;
+            })
+        })
     }
 
     return(
