@@ -16,6 +16,7 @@ function OutputtingLists() {
 
     return(
         <div>
+            <h2>Outputting Lists of Anime Shows</h2>
             {anime.map((animeNames, index) => (
                 <li key={index}>{index + 1} - {animeNames.AnimeName}</li>
             ))}

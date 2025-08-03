@@ -19,6 +19,7 @@ function ReactVid21() {
 
     return(
         <div>
+            <h2>Deleting Items from the List</h2>
             {todo.map((todoItems, index) => (
                 <div key={index}>
                     <li>{todoItems.id} - {todoItems.todos}</li>
